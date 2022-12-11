@@ -8,6 +8,7 @@ const Navbar = () => {
         { name: "ABOUT", link: "#about" },
         { name: "SKILLS", link: "#skills" },
         { name: "PROJECTS", link: "#project" },
+        { name: "DETAILS", link: "#details" },
         { name: "CONTACT", link: "#contact" },
     ];
     useEffect(() => {
@@ -25,7 +26,7 @@ const Navbar = () => {
 				<div className='flex items-center justify-between'>
 					<div className='mx-7'>
 						<h4 className='text-4xl'>
-							PROT<span className='text-cyan-600'>FOL</span>IO
+							PORT<span className='text-cyan-600'>FOL</span>IO
 						</h4>
 					</div>
 					<div

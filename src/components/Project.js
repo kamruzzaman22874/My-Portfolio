@@ -1,19 +1,18 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import carsell from '../assets/CAR-SELL-Project.jpeg'
-import spaservice from '../assets/Spa-Service-Project.jpeg'
-import learncode from '../assets/Learn-Coding.jpg'
+import Carsell from '../assets/CAR-SELL-Project.jpeg'
+import Spaservice from '../assets/Spa-Service-Project.jpeg'
+import Learncode from '../assets/Learn-Coding.jpg'
 import images from '../assets/about.jpg'
 import "swiper/css"
 import "swiper/css/pagination"
-import { Pagination , Autoplay } from 'swiper';
-
-
+import { Pagination, Autoplay } from 'swiper';
+import Details from './Details';
 const Project = () => {
     const projects = [
 			{
-            img: carsell,
-                name: 'Car Sell',
+				img: Carsell,
+				name: 'Car Sell',
 				github_client_link:
 					'https://github.com/kamruzzaman22874/My-Old-Car-Sell-Repo',
 				github_server_link:
@@ -21,17 +20,21 @@ const Project = () => {
 				live_link: 'https://old-car-390a9.web.app/',
 			},
 			{
-                img: spaservice,
-                name:'Spa Service',
-				github_client_link: 'https://github.com/kamruzzaman22874/My-Spa-Service-Repo',
-				github_server_link: 'https://github.com/kamruzzaman22874/Spa-Service-Server-Repo',
+				img: Spaservice,
+				name: 'Spa Service',
+				github_client_link:
+					'https://github.com/kamruzzaman22874/My-Spa-Service-Repo',
+				github_server_link:
+					'https://github.com/kamruzzaman22874/Spa-Service-Server-Repo',
 				live_link: 'https://assignment11-spa.web.app/',
 			},
 			{
-                img: learncode,
-                name:'Learn Coding',
-				github_client_link: 'https://github.com/kamruzzaman22874/My-Learn-Coding-Repo',
-				github_server_link: 'https://github.com/kamruzzaman22874/Learn-Coding-Repo',
+				img: Learncode,
+				name: 'Learn Coding',
+				github_client_link:
+					'https://github.com/kamruzzaman22874/My-Learn-Coding-Repo',
+				github_server_link:
+					'https://github.com/kamruzzaman22874/Learn-Coding-Repo',
 				live_link: 'https://assignment10-authenticat-1b32f.web.app/',
 			},
 		];
@@ -90,7 +93,9 @@ const Project = () => {
 											>
 												Live Demo
 											</a>
+											
 										</div>
+										
 									</div>
 								</SwiperSlide>
 							))}

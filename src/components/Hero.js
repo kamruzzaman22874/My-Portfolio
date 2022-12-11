@@ -1,12 +1,14 @@
 import React from 'react';
 import hero from '../assets/hero.jpg'
+import { FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
+	
 
 const Hero = () => {
-    const social_media = [
-		'logo-instagram',
-        'logo-facebook',
-        'logo-linkedin',
-    ];
+    // const social_media = [
+	// 	'logo-instagram',
+    //     'logo-facebook',
+    //     'logo-linkedin',
+    // ];
     return (
 			<section
 				id='home'
@@ -28,17 +30,33 @@ const Hero = () => {
 							</span>
 							I am <span>Jamal Hossen</span>
 						</h1>
-
 						<h4 className='md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600'>
 							Front-End Developer
 						</h4>
 						<button className='btn-primary mt-6'>Contact Me</button>
-						<div className='mt-8 text-3xl flex items-center md:justify-start justify-center gap-5'>
+						{/* <div className='mt-8 text-3xl flex items-center md:justify-start justify-center gap-5'>
 							{social_media?.map((icon) => (
 								<div key={icon} className="text-gray-600 hover:text-white cursor-pointer">
 									<ion-icon name={icon}></ion-icon>
 								</div>
 							))}
+						</div> */}
+						<div className='mt-8 text-3xl flex items-center md:justify-start justify-center gap-5'>
+							<a
+								href='https://www.instagram.com/kamruzzaman.joy.63/'
+								target='_blank'
+							>
+								<FaInstagram></FaInstagram>
+							</a>
+							<a
+								href='https://www.facebook.com/kamruzzaman.joy.63/' target='_blank'>
+								<FaFacebook></FaFacebook>
+							</a>
+							<a
+								href='https://www.linkedin.com/in/md-jamal-hossen-583989220/'
+								target='_blank'>
+								<FaLinkedin />
+							</a>
 						</div>
 					</div>
 				</div>
