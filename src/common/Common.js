@@ -1,6 +1,7 @@
 import React from 'react';
 import About from '../components/About';
 import Bot from '../components/Bot';
+import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';
 import Hireme from '../components/Hireme';
@@ -18,7 +19,8 @@ const Common = () => {
             <Skills></Skills>
             <Hireme></Hireme>
             <Project></Project>
-            {/* <Footer></Footer> */}
+            <Contact></Contact>
+            <Footer></Footer>
 
         </div>
     );

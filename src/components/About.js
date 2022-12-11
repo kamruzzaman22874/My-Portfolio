@@ -36,7 +36,7 @@ const About = () => {
 										</div>
 									))}
 								</div>
-								<a href='../assets/Jamal-Hossen.pdf' download>
+								<a href={resume} download>
 									<button className='btn btn-primary mt-8'>
 										Download Resume
 									</button>

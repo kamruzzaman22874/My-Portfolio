@@ -1,11 +1,11 @@
-// import React from 'react';
+import React from 'react';
 
-// const Footer = () => {
-//     return (
-//         <div>
-//             <h1>This Is Footer</h1>
-//         </div>
-//     );
-// };
+const Footer = () => {
+    return (
+        <div className='bg-gray-800 text-sm p-4 text-center text-white'>
+            Copyright @ 2022 Jamal.All Right reserved
+        </div>
+    );
+};
 
-// export default Footer;
+export default Footer;

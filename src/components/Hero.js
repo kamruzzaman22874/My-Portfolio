@@ -3,7 +3,7 @@ import hero from '../assets/hero.jpg'
 
 const Hero = () => {
     const social_media = [
-        'logo-instagram',
+		'logo-instagram',
         'logo-facebook',
         'logo-linkedin',
     ];

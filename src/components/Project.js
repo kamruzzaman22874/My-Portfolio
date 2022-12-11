@@ -63,36 +63,37 @@ const Project = () => {
 							}}
 							modules={[Pagination, Autoplay]}
 						>
-                        {
-                            projects.map((project_info, i) => (
-                                <SwiperSlide key={i}>
-								<div className='h-fit w-full p-4 bg-slate-700 rounded-xl'>
-									<img src={project_info.img} alt='' className='rounded-lg' />
-									<h3 className='text-xl my-4'>{project_info.name}</h3>
-									<div className='flex gap-3'>
-										<a
-											href={project_info.github_client_link}
-											className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'
-										>
-											GitHub Client
-										</a>
-										<a
-											href={project_info.github_server_link}
-											className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'
-										>
-											GitHub Server
-										</a>
-										<a
-											href={project_info.live_link}
-											className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'
-										>
-											Live Demo
-										</a>
+							{projects.map((project_info, i) => (
+								<SwiperSlide key={i}>
+									<div className='h-fit w-full p-4 bg-slate-700 rounded-xl'>
+										<img src={project_info.img} alt='' className='rounded-lg' />
+										<h3 className='text-xl my-4'>{project_info.name}</h3>
+										<div className='flex gap-3'>
+											<a
+												href={project_info.github_client_link}
+												target='_blank'
+												className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'
+											>
+												GitHub Client
+											</a>
+											<a
+												href={project_info.github_server_link}
+												target='_blank'
+												className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'
+											>
+												GitHub Server
+											</a>
+											<a
+												href={project_info.live_link}
+												target='_blank'
+												className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block'
+											>
+												Live Demo
+											</a>
+										</div>
 									</div>
-								</div>
-							</SwiperSlide>
-                            ))
-                        }
+								</SwiperSlide>
+							))}
 						</Swiper>
 					</div>
 
